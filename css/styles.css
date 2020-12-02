@@ -1,0 +1,310 @@
+/* Global Layout Set-up */
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #4a4a4a;
+    font-size: 1em;
+    background-color: #fbfbfb;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: 'Merriweather Sans', sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+    color: #FFC107;
+  }
+
+  a:hover {
+    color: #36acd0;
+  }
+
+  .container hr {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+/* Navigation Main */
+
+  .main-header {
+    padding: 1em 0;
+  }
+
+  .main-name {
+    font-size: 1.5em;
+    margin: 0;
+    color: #fff;
+    padding: 10px 10px 10px 0;
+  }
+
+  .nav-buttons a {
+    display: block;
+    transition: background-color .8s;
+    background-color: #202945;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration: none;
+    padding: 12px;
+    margin: 10px 0;
+  }
+
+  .nav-buttons a:hover {
+    color: #36acd0;
+    background-color: #fff;
+  }
+
+
+/* Navigation Footer */
+
+  .footer-border {
+    border-top: 1px solid #d4d4d4;
+  }
+
+  .footer-name {
+    float: left;
+  }
+
+  .footer-name, 
+  .footer-buttons,
+  .footer-buttons li,
+  .back-top {
+    display: inline;
+    margin: 1.5em 0;
+  }
+
+  .footer-buttons a {
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .footer-buttons a:hover {
+    color: #36acd0;
+  }
+
+
+  .footer-buttons{
+    display: none;
+  }
+
+  .back-top {
+    display: inline;
+    float: right;
+  }
+
+
+/* Main Section Styles */
+
+  .header-section{
+    padding: 2em 0;
+  }
+
+  .portfolio-section,
+  .skills-section,
+  .contact-section {
+    padding: 1em 0 2em 0;
+  }
+
+  .main-header,
+  .contact-section,
+  .main-footer {
+    background-color: #202945;
+    color: #fff;
+  }
+
+  .portfolio-section .container,
+  .skills-section .container {
+    background-color: #fff;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+
+  .header-section img {
+    width: 70%;
+    max-width: 367px;
+    margin: 20px;
+  }
+
+  .header-section p {
+    font-weight: 300;
+    color: #949494;
+    line-height: 1.4em;
+  }
+
+  .section-title {
+    text-transform: uppercase;
+    padding: 30px;
+    color: #202945;
+  }
+
+  .skills-section .col {
+    font-weight: 300;
+    line-height: 1.4em;
+  }
+
+  .skills-section ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    text-align: left;
+  }
+
+  .contact-txt,
+  .phone-txt,
+  .email-txt {
+    padding: 0.5em 0;
+  }
+
+  .contact-section h4 {
+    color: #fff;
+  }
+
+  .phone,
+  .email {
+    padding: 0.5em 0;
+    font-weight: 600;
+  }
+
+  /* Column Styles */
+
+  .col {
+    padding-bottom: 2em;
+  }
+
+  .col h3 {
+    font-weight: 400;
+    margin: 1em 0;
+  }
+
+  .col p {
+    font-weight: 300;
+    line-height: 1.4em;
+    padding: 0 20px;
+  }
+
+  .skills-section img,
+  .col img {
+    width: 100%;
+    padding: 20px 0 10px;
+  }
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  /* Media Queries */
+
+  /* Styles for larger screens */
+
+  @media (min-width: 768px) {
+
+    .container {
+      width: 80%;
+    }
+
+    .nav-buttons ,
+    .nav-buttons li{
+      display: inline-block;
+    }
+
+    .nav-buttons a {
+      margin: 10px 5px;
+    }
+
+    .header-section img {
+      width: 290px;
+      float: right;
+      margin: 0 0 0 20px;
+    }
+
+    .header-section p {
+      text-align: left;
+    }
+
+    .col-grid {
+      display: grid;
+      grid-column-gap: 15px;
+      grid-row-gap: 15px;
+    }
+    /* resource: https://developer.mozilla.org/en-US/docs/Glossary/Gutters */
+
+    .portfolio-section .col-grid,
+    .skills-section .col-grid {
+      grid-template-columns: repeat(2,1.2fr);
+    }
+    
+  }
+
+    /* Styles for larger/desktop screens */
+
+    @media (min-width: 1024px) {
+
+      .container {
+        width: 70%;
+        max-width: 1000px;
+      }
+
+      .main-name,
+      .nav-buttons ,
+      .nav-buttons li{
+        display: inline;
+      }
+  
+      .main-name {
+        float: left;
+      }
+    
+      .nav-buttons {
+        float: right;
+      }
+  
+      .nav-buttons li {
+        float: left;
+        margin-left: 5px;
+      }
+
+      .nav-buttons a {
+        margin: 2px 0;
+      }
+  
+      .footer-buttons{
+        display: inline;
+        float: right;
+      }
+  
+      .back-top {
+        display: none;
+      }
+
+      .header-section img {
+        width: 367px;
+      }
+
+      .portfolio-section .col-grid {
+        grid-template-columns: repeat(3,1.2fr);
+      }
+
+      
+    }
+
