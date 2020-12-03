@@ -253,6 +253,15 @@
     .skills-section .col-grid {
       grid-template-columns: repeat(2,1.2fr);
     }
+
+    .footer-buttons {
+      display: inline;
+      float: right;
+    }
+
+    .back-top {
+      display: none;
+    }
     
   }
 
@@ -286,15 +295,6 @@
 
       .nav-buttons a {
         margin: 2px 0;
-      }
-  
-      .footer-buttons{
-        display: inline;
-        float: right;
-      }
-  
-      .back-top {
-        display: none;
       }
 
       .header-section img {
